@@ -1,0 +1,25 @@
+
+<h1> Audio </h1>
+
+<audio controls>
+    <source src={{form_data['Path']}} type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<br>
+
+<h2>
+    MEL Spectogram of Audio
+</h2>
+
+<br>
+
+<body>
+    <img src={{form_data['SPEC']}} alt="MEL Spectogram of Audio">
+</body>
+
+<br>
+
+<h2>
+    Prediction: {{form_data['prediction']}}
+</h2>
