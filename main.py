@@ -111,5 +111,5 @@ def data():
         data_to_pass['prediction'] = predicted_label
         return render_template('data.html', form_data=data_to_pass)
 
-
-app.run(host='localhost', port=5000, debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080, debug=True)
